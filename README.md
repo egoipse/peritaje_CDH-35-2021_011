@@ -6,9 +6,9 @@ En la carpeta `src` se encuentran los códigos que importan, procesan, limpian y
 
 Los archivos de las sentencias debían estar la carpeta `docs`. Debido a su gran cantidad y al limitado espacio de almacenamiento de github, no se encuentran en el presente repositorio. Se pueden descargar del [siguiente enlace](https://www.dropbox.com/sh/cwfkr16ocx12j55/AAAiLjUMcz0ktduiVPPYR0iAa?dl=1). Si este repositorio es clonado, deben descargarse y guardarse en la carpeta `docs/Causas` para que los scripts funcionen.
 
-El reporte final se genera con RMarkdown a través del scritp informe_final.RMD que se encuentra en la carpeta `reports`.
+El reporte final se encuentra disponible [en este enlace](https://github.com/egoipse/peritaje_CDH-35-2021_011/blob/master/reports/informe_final.pdf). Se genera en RMarkdown a través del script `informe_final.RMD` que se encuentra en la carpeta `reports`.
 
-Quedan liberados los scripts y los archivos con las sentencias con el propósito de hacer posible tanto la auditoría y reproducción del proceso de generación de los resultados del reporte. Se permite su uso bajo los términos de la licenceia Creative Commons 4.0 NonCommercial - Attribution - ShareAlike.
+Quedan liberados los scripts y los archivos con las sentencias con el propósito de posibilitar la auditoría y reproducción del proceso de generación de los resultados del reporte. Se permite su uso bajo los términos de la Licencia Creative Commons 4.0 NonCommercial - Attribution - ShareAlike.
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>.
 

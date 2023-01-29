@@ -417,6 +417,8 @@ bigramas_wclouds <- bigramas |>
 set.seed(1234)
 
 if(!file.exists(here("img", paste0("grafico_", meta$labels$grafico, ".png")))) {
+  
+  # data.table produce problemas en funciones cuando se ejecuta en RMarkdown
 
   as.data.table(bigramas_wclouds)[,
                                   `:=`(freq = .N),
@@ -468,6 +470,8 @@ meta$labels$grafico <- meta$labels$grafico + 1
 set.seed(1234)
 
 if(!file.exists(here("img", paste0("grafico_", meta$labels$grafico, ".png")))) {
+  
+  # data.table produce problemas en funciones cuando se ejecuta en RMarkdown
 
   as.data.table(bigramas_wclouds)[,
                                   `:=`(freq = .N),
@@ -507,6 +511,8 @@ meta$labels$grafico <- meta$labels$grafico + 1
 set.seed(1234)
 
 if(!file.exists(here("img", paste0("grafico_", meta$labels$grafico, ".png")))) {
+  
+  # data.table produce problemas en funciones cuando se ejecuta en RMarkdown
 
   as.data.table(bigramas_wclouds)[media_prescripcion == "1",
                                   `:=`(freq = .N),
@@ -542,6 +548,8 @@ meta$labels$grafico <- meta$labels$grafico + 1
 set.seed(1234)
 
 if(!file.exists(here("img", paste0("grafico_", meta$labels$grafico, ".png")))) {
+  
+  # data.table produce problemas en funciones cuando se ejecuta en RMarkdown
 
   as.data.table(bigramas_wclouds)[media_prescripcion == "0",
                                   `:=`(freq = .N),
@@ -585,6 +593,8 @@ Puesto que se trata de un indicador neto, que se calcula en relación a los tota
 meta$labels$cuadro <- meta$labels$cuadro + 1
 
 if(!file.exists(here("img", paste0("cuadro_", meta$labels$cuadro, ".png")))) {
+  
+  # data.table produce problemas en funciones cuando se ejecuta en RMarkdown
 
 tf_mencionan <- bigramas_wclouds |>
   filter(media_prescripcion == "1") |> 
@@ -704,6 +714,8 @@ meta$labels$grafico <- meta$labels$grafico + 1
 
 if(!file.exists(here("img", paste0("grafico_", meta$labels$grafico, ".png")))) {
   
+  # data.table produce problemas en funciones cuando se ejecuta en RMarkdown
+  
   bigramas_wclouds |> 
     count(media_prescripcion, bigramas, sort = T) |>
     filter(bigramas != "media prescripción") |> 
@@ -778,6 +790,8 @@ meta$labels$grafico <- meta$labels$grafico + 1
 set.seed(1234) 
 
 if(!file.exists(here("img", paste0("grafico_", meta$labels$grafico, ".png")))) {
+  
+  # data.table produce problemas en funciones cuando se ejecuta en RMarkdown
 
   grafos_mencionan <- as.data.table(bigramas_wclouds)[media_prescripcion == "1",
                                     `:=`(freq = .N),
@@ -822,6 +836,8 @@ meta$labels$grafico <- meta$labels$grafico + 1
 set.seed(1234) 
 
 if(!file.exists(here("img", paste0("grafico_", meta$labels$grafico, ".png")))) {
+  
+  # data.table produce problemas en funciones cuando se ejecuta en RMarkdown
 
   grafos_nomencionan <- as.data.table(bigramas_wclouds)[media_prescripcion == "0",
                                     `:=`(freq = .N),
